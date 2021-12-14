@@ -1,0 +1,296 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fuzzy Bubbles', cursive;
+    margin: 0;
+    padding: 0;
+    background: rgb(254, 255, 253);
+}
+
+header{
+    padding: 18px;
+    background-color: black;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 48px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(17, 17, 17);
+}
+
+nav h2 {
+    font-size: 20px ;
+    font-family: 'Permanent Marker', normal;
+}
+
+nav a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a i {
+    margin-right:10px;
+}
+
+.buscador {
+    padding: 7px;
+}
+
+section p {
+    text-align: justify;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+.row {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 70%;
+    background-color: rgb(253, 253, 253);
+    padding: 20px;
+    background: rgb(254, 255, 253);
+}
+
+#galeria {
+    border-radius: 1cm;
+    border: 4px solid rgb(72, 170, 64);
+    background-color: rgb(248, 255, 241);
+}
+
+/** BARRA DE PROGRESO **/
+.bg-blue{
+    background-color: rgb(63, 153, 238);
+}
+
+.margin-t-b{
+    margin: 2rem;
+}
+
+/** FORMULARIO DE CONTACTO**/
+
+aside {
+    flex: 34px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 1cm;
+    border: 4px solid rgb(72, 170, 64);
+    background-color: rgb(252, 252, 190);
+}
+
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--primario);
+    margin-bottom: 2rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+@media (min-width:768px) {
+    .formulario {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+.contenedor-campos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.campo {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+@media (min-width:480px) {
+    .campo {
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    .campo{
+        flex: 0 0 calc(50% - .5rem)
+    }
+}
+.campo label {
+    color: var(--blanco);
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: block;
+}
+@media (min-width:480px) {
+    .campo label {
+        flex: 0 0 90px;
+    }
+}
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="mail"],
+.campo textarea {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+}
+@media (min-width: 768px) {
+    :is(.campo) :is( 
+        input[type="text"], 
+        input[type="text"],  
+        input[type="tel"],  
+        input[type="mail"] , 
+        textarea ) {
+        flex: 1;
+    }
+}
+
+.w-100{
+    flex: 0 0 100%;
+}
+.campo textarea {
+    height: 4rem;
+}
+
+.enviar {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*  BARRA DE PROGRESO */
+.bg-naranja{
+    background-color: #f87c14;
+}
+.margin-t-b{
+    margin: 2rem;
+}
+
+/** GALIERIA **/
+
+#galeria .col-lg-4{
+    margin: 0;
+    padding: 25px;
+}
+
+#galeria img{
+    width:100%;
+    height: 300px;
+}
+
+#galeria img:hover{
+    border: 5px solid rgb(0, 0, 0);
+}
+
+#carouselExampleControls img {
+    height: 100%;
+}
+
+/** UBICACIÓN **/
+
+.ubicacion {
+    padding: 20px;
+    margin-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 1cm;
+    border: 4px solid rgb(72, 170, 64);
+    background: rgb(248, 255, 241);
+    text-align: center;
+}
+
+/** PAYPAL **/
+.bg-paypal {
+    background: rgb(209, 209, 209);
+    padding: 5px;
+}
+
+.st-paypal {
+    background: white;
+    border-radius: 1cm;
+    margin: 20px 100px;
+    padding: 20px;
+    border: 4px solid black;
+}
+
+.donacion {
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+}
+
+.donacion img {
+    height: 200px;
+}
+
+.donacion h3 {
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+    nav, row {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 15px;
+    }
+    
+    h4 {
+        font-size: 12px;
+    }
+    .st-paypal {
+        margin: 20px auto;
+    }
+    .donacion h3 {
+        font-size: 15px;
+    }
+    .ubicacion iframe {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
